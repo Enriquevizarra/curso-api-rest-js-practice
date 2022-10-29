@@ -1,0 +1,19 @@
+{
+  "name": "curso-api-rest-js-practice",
+  "version": "1.0.0",
+  "description": "consuming an api",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enriquevizarra/curso-api-rest-js-practice.git"
+  },
+  "author": "EnriqueVizarra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Enriquevizarra/curso-api-rest-js-practice/issues"
+  },
+  "homepage": "https://github.com/Enriquevizarra/curso-api-rest-js-practice#readme"
+}
