@@ -127,11 +127,11 @@ function createCategories(categories, container, condition){
   });
 }
 
-// function click(img, movie){
-//   img.addEventListener("click",_ => {
-//     location.hash = "#movie=" + movie.id
-//   })
-// }
+function click(img, movie){
+  img.addEventListener("click",_ => {
+    location.hash = "#movie=" + movie.id
+  })
+}
 
 
 
