@@ -76,13 +76,13 @@ async function getMovieById(id){
   getSimilarMoviesId(id) 
 }
 
-// async function getSimilarMoviesId(id){
-//   const { data: movie } = await api(`movie/${id}/similar`)
-//   console.log("=======")
-//   console.log(movie)
-//   console.log("=======")
-//   createMovies(movie.results, relatedMoviesContainer)
-// }
+async function getSimilarMoviesId(id){
+  const { data: movie } = await api(`movie/${id}/similar`)
+  console.log("=======")
+  console.log(movie)
+  console.log("=======")
+  createMovies(movie.results, relatedMoviesContainer)
+}
           
 // // utils 
 // function createMovies(movies,container){
