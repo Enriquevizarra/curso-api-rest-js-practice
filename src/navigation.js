@@ -16,20 +16,16 @@ window.addEventListener(
   false,
 );
 
-// arrowBtn.addEventListener("click", _ => {
-//   // console.log("=================")
-//   // console.log(location.hash)
-//   // console.log("=================")
-  
-//   // const statedLoad = window.history.state ? window.history.state.loadUrl : "";
-//   // if(statedLoad.includes("#")){
-//   //   window.location.hash="";
-//   // } else {
-//   //   window.history.back();
-//   // }
-
-//   window.history.back();
-// })
+arrowBtn.addEventListener("click", _ => {
+  console.log(location.hash)
+  const statedLoad = window.history.state ? window.history.state.loadUrl : "";
+  if(statedLoad.includes("#")){
+    window.location.hash="";
+  } else {
+    window.history.back();
+  }
+  window.history.back();
+})
 
 
 // window.addEventListener("DOMContentLoaded", navigator, false)
