@@ -47,25 +47,23 @@ function navigator(){
   document.documentElement.scrollTop = 0
 }
 
-// function homePage(){
-//   console.log("Home!!!")
-  
-//   headerSection.classList.remove("header-container--long")
-//   headerSection.style.background = "";
-//   arrowBtn.classList.add("inactive")
-//   arrowBtn.classList.remove("header-arrow--white")
-//   headerTitle.classList.remove("inactive")
-//   headerCategoryTitle.classList.add("inactive")
-//   searchForm.classList.remove("inactive")
-  
-//   trendingPreviewSection.classList.remove("inactive")
-//   categoriesPreviewSection.classList.remove("inactive")
-//   genericSection.classList.add("inactive")
-//   movieDetailSection.classList.add("inactive")
-  
-//   getTrendingPreview()
-//   getCategoriesPreview()
-// }
+function homePage(){
+  console.log("Home!!!")
+  headerSection.classList.remove("header-container--long")
+  headerSection.style.background = "";
+  arrowBtn.classList.add("inactive")
+  arrowBtn.classList.remove("header-arrow--white")
+  headerTitle.classList.remove("inactive")
+  headerCategoryTitle.classList.add("inactive")
+  searchForm.classList.remove("inactive")
+  trendingPreviewSection.classList.remove("inactive")
+  categoriesPreviewSection.classList.remove("inactive")
+  genericSection.classList.add("inactive")
+  movieDetailSection.classList.add("inactive")
+  getTrendingPreview()
+  getCategoriesPreview()
+}
+
 // function trendsPage(){
 //   console.log("trends!!!")
   
