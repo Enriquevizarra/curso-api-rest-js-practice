@@ -90,7 +90,6 @@ function createMovies(movies,container){
   movies.forEach(movie => {
     const  movieContainer = document.createElement("div")
     movieContainer.classList.add("movie-container")
-
     const movieImg = document.createElement("img")
     movieImg.classList.add("movie-img")
     movieImg.setAttribute("alt", movie.title);
@@ -105,36 +104,28 @@ function createMovies(movies,container){
   })
 }
 
-// function createCategories(categories, container, condition){
-  
-//   container.innerHTML = ""
-//   const h2 = document.createElement("H2")
-//   h2.textContent = "Categories"
-//   h2.classList.add("categoriesPreview-title")
-    
-//   const article = document.createElement("article")
-//   article.classList.add("categoriesPreview-list")
-    
-//   categories.forEach(category => {
-//     const categoryContainer = document.createElement("div");
-//     categoryContainer.classList.add("category-container");
-  
-//     const categoryTitle = document.createElement("h3");
-//     categoryTitle.classList.add("category-title")
-//     categoryTitle.setAttribute("id", "id"+category.id)
-//     categoryTitle.textContent = category.name
-//     categoryTitle.addEventListener("click", _ => {
-//     location.hash = `category=${category.id}-${category.name}`
-//     })
-
-//   categoryContainer.append(categoryTitle)
-//   article.append(categoryContainer)
-//   condition==true?container.append(h2, article):container.append(article)
-  
-//   });
-
-
-// }
+function createCategories(categories, container, condition){
+  container.innerHTML = ""
+  const h2 = document.createElement("H2")
+  h2.textContent = "Categories"
+  h2.classList.add("categoriesPreview-title")
+  const article = document.createElement("article")
+  article.classList.add("categoriesPreview-list")
+  categories.forEach(category => {
+    const categoryContainer = document.createElement("div");
+    categoryContainer.classList.add("category-container");
+    const categoryTitle = document.createElement("h3");
+    categoryTitle.classList.add("category-title")
+    categoryTitle.setAttribute("id", "id"+category.id)
+    categoryTitle.textContent = category.name
+    categoryTitle.addEventListener("click", _ => {
+    location.hash = `category=${category.id}-${category.name}`
+    })
+  categoryContainer.append(categoryTitle)
+  article.append(categoryContainer)
+  condition==true?container.append(h2, article):container.append(article)
+  });
+}
 
 // function click(img, movie){
 //   img.addEventListener("click",_ => {
