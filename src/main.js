@@ -62,22 +62,19 @@ async function getTrendingMovie(){
   createMovies(movies, genericSection)
 }
 
-// async function getMovieById(id){
-//   const { data: movie } = await api(`movie/${id}`);
-
-//   const movieImgUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path
-//   headerSection.style.background=`
-//   linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%),
-//   url(${movieImgUrl})`
+async function getMovieById(id){
+  const { data: movie } = await api(`movie/${id}`);
+  const movieImgUrl = "https://image.tmdb.org/t/p/w300" + movie.poster_path
+  headerSection.style.background=`
+  linear-gradient(180deg, rgba(0, 0, 0, 0.35) 19.27%, rgba(0, 0, 0, 0) 29.17%),
+  url(${movieImgUrl})`
   
-
-//   movieDetailTitle.textContent = movie.title
-//   movieDetailDescription.textContent = movie.overview
-//   movieDetailScore.textContent = movie.vote_average
-//   createCategories(movie.genres, movieDetailCategoriesList,false)
-//   getSimilarMoviesId(id)
-  
-// }
+  movieDetailTitle.textContent = movie.title
+  movieDetailDescription.textContent = movie.overview
+  movieDetailScore.textContent = movie.vote_average
+  createCategories(movie.genres, movieDetailCategoriesList,false)
+  getSimilarMoviesId(id) 
+}
 
 // async function getSimilarMoviesId(id){
 //   const { data: movie } = await api(`movie/${id}/similar`)
