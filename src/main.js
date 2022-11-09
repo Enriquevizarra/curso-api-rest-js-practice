@@ -17,20 +17,20 @@ async function getTrendingPreview(){
   createMovies(movies, trendingMoviesPreviewList)
 }
 
-// async function getCategoriesPreview(){
-//   try{
-//     const { data } = await api("genre/movie/list")
-//     const categories = data.genres
+async function getCategoriesPreview(){
+  try{
+    const { data } = await api("genre/movie/list")
+    const categories = data.genres
   
-//     console.log("===============")
-//     console.log(categories)
+    console.log("===============")
+    console.log(categories)
     
-//     const categoriesPreviewList = document.querySelector("#categoriesPreview");
-//     createCategories(categories, categoriesPreviewList, true)
-//   }catch(error){
-//     console.log(error)
-//   }
-// }
+    const categoriesPreviewList = document.querySelector("#categoriesPreview");
+    createCategories(categories, categoriesPreviewList, true)
+  }catch(error){
+    console.log(error)
+  }
+}
 
 // async function getMoviesByCategory(id){
 //   const { data } = await api("discover/movie",{
