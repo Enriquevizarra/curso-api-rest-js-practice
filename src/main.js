@@ -9,13 +9,13 @@ const api = axios.create({
   }
 });
 
-// async function getTrendingPreview(){
-//   const { data } = await api("trending/movie/day")
+async function getTrendingPreview(){
+  const { data } = await api("trending/movie/day")
   
-//   const movies = data.results
-//   console.log(data)
-//   createMovies(movies, trendingMoviesPreviewList)
-// }
+  const movies = data.results
+  console.log(data)
+  createMovies(movies, trendingMoviesPreviewList)
+}
 
 // async function getCategoriesPreview(){
 //   try{
