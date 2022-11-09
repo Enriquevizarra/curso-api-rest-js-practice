@@ -64,24 +64,23 @@ function homePage(){
   getCategoriesPreview()
 }
 
-// function trendsPage(){
-//   console.log("trends!!!")
-  
-//   headerSection.classList.remove("header-container--long")
-//   headerSection.style.background = "";
-//   arrowBtn.classList.remove("inactive")
-//   arrowBtn.classList.remove("header-arrow--white")
-//   headerTitle.classList.add("inactive")
-//   headerCategoryTitle.classList.remove("inactive")
-//   searchForm.classList.add("inactive")
+function trendsPage(){
+  console.log("trends!!!")
+  headerSection.classList.remove("header-container--long")
+  headerSection.style.background = "";
+  arrowBtn.classList.remove("inactive")
+  arrowBtn.classList.remove("header-arrow--white")
+  headerTitle.classList.add("inactive")
+  headerCategoryTitle.classList.remove("inactive")
+  searchForm.classList.add("inactive")
+  trendingPreviewSection.classList.add("inactive")
+  categoriesPreviewSection.classList.add("inactive")
+  genericSection.classList.remove("inactive")
+  movieDetailSection.classList.add("inactive")
+  headerCategoryTitle.innerHTML = "Trending"
+  getTrendingMovie()
+}
 
-//   trendingPreviewSection.classList.add("inactive")
-//   categoriesPreviewSection.classList.add("inactive")
-//   genericSection.classList.remove("inactive")
-//   movieDetailSection.classList.add("inactive")
-//   headerCategoryTitle.innerHTML = "Trending"
-//   getTrendingMovie()
-// }
 // function searchPage(){
 //   console.log("search!!!")
   
