@@ -85,25 +85,25 @@ async function getSimilarMoviesId(id){
 }
           
 // // utils 
-// function createMovies(movies,container){
-//   container.innerHTML = "";
-//   movies.forEach(movie => {
-//     const  movieContainer = document.createElement("div")
-//     movieContainer.classList.add("movie-container")
+function createMovies(movies,container){
+  container.innerHTML = "";
+  movies.forEach(movie => {
+    const  movieContainer = document.createElement("div")
+    movieContainer.classList.add("movie-container")
 
-//     const movieImg = document.createElement("img")
-//     movieImg.classList.add("movie-img")
-//     movieImg.setAttribute("alt", movie.title);
-//     movieImg.setAttribute(
-//       "src",
-//       "https://image.tmdb.org/t/p/w300" + movie.poster_path,
-//     );
-//     click(movieImg,movie)  
+    const movieImg = document.createElement("img")
+    movieImg.classList.add("movie-img")
+    movieImg.setAttribute("alt", movie.title);
+    movieImg.setAttribute(
+      "src",
+      "https://image.tmdb.org/t/p/w300" + movie.poster_path,
+    );
+    click(movieImg,movie)  
 
-//     movieContainer.append(movieImg)
-//     container.append(movieContainer)
-//   })
-// }
+    movieContainer.append(movieImg)
+    container.append(movieContainer)
+  })
+}
 
 // function createCategories(categories, container, condition){
   
