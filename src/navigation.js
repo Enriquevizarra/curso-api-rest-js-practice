@@ -6,15 +6,15 @@ trendingBtn.addEventListener("click", _ => {
   location.hash = "#trends="
 })
 
-// window.addEventListener(
-//   'DOMContentLoaded',
-//   () => {
-//       navigator();
-//       // Agregando un estado de carga inical
-//       window.history.pushState({ loadUrl: window.location.href }, null, '');
-//   },
-//   false,
-// );
+window.addEventListener(
+  'DOMContentLoaded',
+  () => {
+      navigator();
+      // Agregando un estado de carga inical
+      window.history.pushState({ loadUrl: window.location.href }, null, '');
+  },
+  false,
+);
 
 // arrowBtn.addEventListener("click", _ => {
 //   // console.log("=================")
