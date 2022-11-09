@@ -81,26 +81,24 @@ function trendsPage(){
   getTrendingMovie()
 }
 
-// function searchPage(){
-//   console.log("search!!!")
-  
-//   headerSection.classList.remove("header-container--long")
-//   headerSection.style.background = "";
-//   arrowBtn.classList.remove("inactive")
-//   arrowBtn.classList.remove("header-arrow--white")
-//   headerTitle.classList.add("inactive")
-//   headerCategoryTitle.classList.add("inactive")
-//   searchForm.classList.remove("inactive")
+function searchPage(){
+  console.log("search!!!")
+  headerSection.classList.remove("header-container--long")
+  headerSection.style.background = "";
+  arrowBtn.classList.remove("inactive")
+  arrowBtn.classList.remove("header-arrow--white")
+  headerTitle.classList.add("inactive")
+  headerCategoryTitle.classList.add("inactive")
+  searchForm.classList.remove("inactive")
+  trendingPreviewSection.classList.add("inactive")
+  categoriesPreviewSection.classList.add("inactive")
+  genericSection.classList.remove("inactive")
+  movieDetailSection.classList.add("inactive")
+  // [search, buscado]
+  const [ _, query ] = location.hash.split("=")
+  getMoviesBySearch(query)
+}
 
-//   trendingPreviewSection.classList.add("inactive")
-//   categoriesPreviewSection.classList.add("inactive")
-//   genericSection.classList.remove("inactive")
-//   movieDetailSection.classList.add("inactive")
-
-//   // [search, buscado]
-//   const [ _, query ] = location.hash.split("=")
-//   getMoviesBySearch(query)
-// }
 // function categoriesPages(){
 //   console.log("categories!!!")
 //   headerSection.classList.remove("header-container--long")
