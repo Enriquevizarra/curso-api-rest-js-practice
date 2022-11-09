@@ -32,17 +32,17 @@ async function getCategoriesPreview(){
   }
 }
 
-// async function getMoviesByCategory(id){
-//   const { data } = await api("discover/movie",{
-//     params: {
-//       with_genres: id,
-//     }
-//   })
-//   const movies = data.results
-//   console.log(movies)
-//   createMovies(movies, genericSection)
+async function getMoviesByCategory(id){
+  const { data } = await api("discover/movie",{
+    params: {
+      with_genres: id,
+    }
+  })
+  const movies = data.results
+  console.log(movies)
+  createMovies(movies, genericSection)
 
-// }
+}
 
 // async function getMoviesBySearch(query){
 //   const { data } = await api("/search/movie",{
