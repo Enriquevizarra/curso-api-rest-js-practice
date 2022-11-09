@@ -120,24 +120,24 @@ function categoriesPages(){
   getMoviesByCategory(categoryId);
 }
 
-// function movieDetailsPage(){
-//   console.log("moviedetail!!!")
+function movieDetailsPage(){
+  console.log("moviedetail!!!")
   
-//   headerSection.classList.add("header-container--long")
+  headerSection.classList.add("header-container--long")
   
-//   arrowBtn.classList.remove("inactive")
-//   arrowBtn.classList.add("header-arrow--white")
-//   headerTitle.classList.add("inactive")
-//   headerCategoryTitle.classList.add("inactive")
-//   searchForm.classList.add("inactive")
+  arrowBtn.classList.remove("inactive")
+  arrowBtn.classList.add("header-arrow--white")
+  headerTitle.classList.add("inactive")
+  headerCategoryTitle.classList.add("inactive")
+  searchForm.classList.add("inactive")
   
-//   trendingPreviewSection.classList.add("inactive")
-//   categoriesPreviewSection.classList.add("inactive")
-//   genericSection.classList.add("inactive")
-//   movieDetailSection.classList.remove("inactive")
-// //      movie , idMovie
-//   const [ _, idMovie ] = location.hash.split("=")
-//   getMovieById(idMovie);
+  trendingPreviewSection.classList.add("inactive")
+  categoriesPreviewSection.classList.add("inactive")
+  genericSection.classList.add("inactive")
+  movieDetailSection.classList.remove("inactive")
+//      movie , idMovie
+  const [ _, idMovie ] = location.hash.split("=")
+  getMovieById(idMovie);
 
-// }
+}
 
