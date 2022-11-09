@@ -2,9 +2,9 @@ searchFormBtn.addEventListener("click", _ => {
   location.hash = `#search=${searchFormInput.value}`
 })
 
-// trendingBtn.addEventListener("click", _ => {
-//   location.hash = "#trends="
-// })
+trendingBtn.addEventListener("click", _ => {
+  location.hash = "#trends="
+})
 
 // window.addEventListener(
 //   'DOMContentLoaded',
