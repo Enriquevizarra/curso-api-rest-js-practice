@@ -26,6 +26,5 @@ const movieDetailTitle = document.querySelector('.movieDetail-title');
 const movieDetailDescription = document.querySelector('.movieDetail-description');
 const movieDetailScore = document.querySelector('.movieDetail-score');
 
-// footer 
-
-// const footer = document.getElementById("footer")
+const containerFavoriteMovies = document.querySelector(".favorite-movieList")
+const SectionFavorites = document.getElementById("liked")
